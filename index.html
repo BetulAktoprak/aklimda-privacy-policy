@@ -1,348 +1,220 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aklımda Gizlilik Politikası</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aklımda Gizlilik Politikası</title>
+
+    <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+          sans-serif;
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      h1 {
+        margin-top: 40px;
+      }
+
+      h2 {
+        margin-top: 30px;
+      }
 
-<style>
-body {
-font-family: Arial, sans-serif;
-max-width: 800px;
-margin: auto;
-padding: 20px;
-line-height: 1.6;
-}
-h1,h2,h3 {
-color: #333;
-}
-</style>
+      hr {
+        margin: 50px 0;
+      }
 
-</head>
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <div class="header">
+      <h1>Aklımda</h1>
+      <h3>Gizlilik Politikası</h3>
+      <p>Son Güncelleme: 16 Nisan 2026</p>
+    </div>
 
-<h1>Aklımda — Gizlilik Politikası</h1>
+    <h2>1. Veri Sorumlusu</h2>
 
-<p>Son Güncelleme: 16 Nisan 2026</p>
+    <p>
+      Geliştirici: Betül Aktoprak <br />
+      E-posta: aklimda.support@gmail.com
+    </p>
 
-<p>Bu Gizlilik Politikası, Aklımda uygulamasının veri kullanımını açıklar.</p>
+    <h2>2. Toplanan Bilgiler</h2>
 
-# Aklımda — Gizlilik Politikası
+    <p>Aklımda uygulaması aşağıdaki bilgileri toplayabilir:</p>
 
-**Son Güncelleme:** 16 Nisan 2026
+    <ul>
+      <li>E-posta adresi</li>
+      <li>Kullanıcı adı</li>
+      <li>Şifre (hashlenmiş olarak saklanır)</li>
+      <li>Günlük metni</li>
+      <li>Ruh hali bilgisi</li>
+      <li>Oluşturulma tarihi</li>
+    </ul>
 
-Bu Gizlilik Politikası, **Aklımda** mobil uygulamasını ("Uygulama") kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.
+    <h2>3. Yapay Zeka Özelliği</h2>
 
-## 1. Veri Sorumlusu
+    <p>
+      Aklımda uygulaması yapay zeka özelliği için aşağıdaki servisleri kullanır:
+    </p>
 
-**Geliştirici:** Betül Aktoprak
-**E-posta:** [aklimda.support@gmail.com](mailto:aklimda.support@gmail.com)
+    <ul>
+      <li>Groq API</li>
+      <li>OpenAI (gerektiğinde)</li>
+    </ul>
 
-Bu Gizlilik Politikası kapsamında veri sorumlusu Betül Aktoprak'tır.
+    <p>
+      Yapay zeka özelliği kullanıldığında günlük metniniz analiz için
+      gönderilebilir. Analiz sonucu oluşturulan yorum ve müzik önerileri
+      saklanabilir.
+    </p>
 
----
+    <h2>4. Müzik Öneri Özelliği</h2>
 
-## 2. Toplanan Bilgiler
+    <p>Uygulama aşağıdaki servisleri kullanır:</p>
 
-Aklımda uygulaması aşağıdaki bilgileri toplayabilir:
+    <ul>
+      <li>Apple iTunes Search API</li>
+      <li>Spotify (harici bağlantı)</li>
+      <li>YouTube (harici bağlantı)</li>
+    </ul>
 
-### 2.1 Hesap Bilgileri
+    <h2>5. Kimlik Doğrulama</h2>
 
-* E-posta adresi
-* Kullanıcı adı
-* Şifre (hashlenmiş olarak saklanır)
+    <p>Uygulama ASP.NET Core JWT kimlik doğrulama sistemini kullanır.</p>
 
-Bu bilgiler:
+    <p>Cihazda saklanan bilgiler:</p>
 
-* Hesap oluşturma
-* Oturum açma
-* Güvenlik
+    <ul>
+      <li>Access token</li>
+      <li>Kullanıcı ID</li>
+      <li>E-posta</li>
+    </ul>
 
-amaçlarıyla kullanılır.
+    <h2>6. Veri Saklama</h2>
 
----
+    <p>
+      Veriler hesap aktif olduğu sürece saklanır. Hesap silme sonrası veriler 30
+      gün içinde tamamen silinir.
+    </p>
 
-### 2.2 Günlük Verileri
+    <h2>7. Analitik</h2>
 
-Kullanıcı tarafından sağlanan:
+    <p>Aklımda uygulaması herhangi bir analitik servisi kullanmaz.</p>
 
-* Günlük metni
-* Başlık (isteğe bağlı)
-* Ruh hali bilgisi
-* Oluşturulma tarihi
+    <h2>8. Altyapı</h2>
 
-Bu bilgiler:
+    <ul>
+      <li>Backend: Render</li>
+      <li>Veritabanı: Supabase PostgreSQL</li>
+    </ul>
 
-* Günlük kaydı
-* Listeleme
-* Yapay zekâ analizi
+    <h2>9. Güvenlik</h2>
 
-için kullanılır.
+    <p>Veriler HTTPS, JWT ve hashlenmiş parolalar ile korunur.</p>
 
----
+    <h2>10. Çocukların Gizliliği</h2>
 
-### 2.3 Yapay Zeka Özelliği
+    <p>Uygulama 13 yaş altı kullanıcıları hedeflemez.</p>
 
-Aklımda uygulaması aşağıdaki yapay zekâ servislerini kullanır:
+    <h2>11. İletişim</h2>
 
-* Groq API (aktif)
-* OpenAI (gerektiğinde)
+    <p>
+      Herhangi bir sorunuz için:<br />
+      aklimda.support@gmail.com
+    </p>
 
-Yapay zekâ özelliği kullanıldığında:
+    <hr />
 
-* Günlük metniniz analiz için gönderilebilir
-* Yapay zekâ yorumu oluşturulabilir
-* Müzik önerisi üretilebilir
+    <div class="header">
+      <h1>Aklımda</h1>
+      <h3>Privacy Policy</h3>
+      <p>Last Updated: April 16, 2026</p>
+    </div>
 
-Bu analiz sonuçları:
+    <h2>1. Developer</h2>
 
-* AiComment
-* AiMusicSuggestion
+    <p>
+      Developer: Betül Aktoprak <br />
+      Email: aklimda.support@gmail.com
+    </p>
 
-alanlarında saklanabilir.
+    <h2>2. Information We Collect</h2>
 
-**Not:** Yapay zekâ istekleri kalıcı log olarak saklanmaz.
+    <ul>
+      <li>Email address</li>
+      <li>Username</li>
+      <li>Password (hashed)</li>
+      <li>Journal text</li>
+      <li>Mood information</li>
+    </ul>
 
----
+    <h2>3. AI Services</h2>
 
-## 3. Müzik Öneri Özelliği
+    <p>The app uses:</p>
 
-Uygulama aşağıdaki servisleri kullanır:
+    <ul>
+      <li>Groq API</li>
+      <li>OpenAI (optional)</li>
+    </ul>
 
-* Apple iTunes Search API
-* Spotify (harici bağlantı)
-* YouTube (harici bağlantı)
+    <p>
+      Journal content may be sent for AI analysis. AI responses may be stored.
+    </p>
 
-Bu servisler kendi gizlilik politikalarına tabidir.
+    <h2>4. Music Services</h2>
 
----
+    <ul>
+      <li>Apple iTunes Search API</li>
+      <li>Spotify</li>
+      <li>YouTube</li>
+    </ul>
 
-## 4. Kimlik Doğrulama
+    <h2>5. Authentication</h2>
 
-Kimlik doğrulama sistemi:
+    <p>Authentication uses ASP.NET Core JWT.</p>
 
-* ASP.NET Core JWT
-* Access Token
-* AsyncStorage
+    <ul>
+      <li>Access token</li>
+      <li>User ID</li>
+      <li>Email</li>
+    </ul>
 
-Kullanıcı oturum bilgileri cihazda saklanabilir:
+    <h2>6. Data Retention</h2>
 
-* Access token
-* Kullanıcı ID
-* E-posta
+    <p>
+      Data stored while account active. Deleted within 30 days after account
+      deletion.
+    </p>
 
-Bu bilgiler yalnızca uygulama çalışması için kullanılır.
+    <h2>7. Analytics</h2>
 
----
+    <p>No analytics tools are used.</p>
 
-## 5. Veri Saklama
+    <h2>8. Infrastructure</h2>
 
-Kişisel veriler:
+    <ul>
+      <li>Backend: Render</li>
+      <li>Database: Supabase PostgreSQL</li>
+    </ul>
 
-* Hesap aktif olduğu sürece saklanır
-* Hesap silme sonrası 30 gün içinde tamamen silinir
+    <h2>9. Security</h2>
 
----
+    <p>HTTPS, JWT and password hashing are used.</p>
 
-## 6. Hesap Silme
+    <h2>10. Contact</h2>
 
-Kullanıcılar:
-
-* Uygulama içinden hesaplarını silebilir
-* Hesap silindikten sonra veriler 30 gün içinde kaldırılır
-
----
-
-## 7. Analitik
-
-Aklımda uygulaması:
-
-* Firebase Analytics kullanmaz
-* Kullanıcı davranış analizi yapmaz
-
-Sunucu logları yalnızca teknik amaçlıdır.
-
----
-
-## 8. Veri Paylaşımı
-
-Veriler aşağıdaki durumlarda paylaşılabilir:
-
-* Yapay zekâ servisleri (Groq, OpenAI)
-* Apple iTunes API
-
-Veriler üçüncü taraflara satılmaz.
-
----
-
-## 9. Altyapı
-
-Uygulama altyapısı:
-
-* Backend: Render
-* Veritabanı: Supabase PostgreSQL
-
----
-
-## 10. Güvenlik
-
-Veriler:
-
-* HTTPS
-* JWT
-* Hashlenmiş şifreler
-
-ile korunur.
-
----
-
-## 11. Çocukların Gizliliği
-
-Uygulama 13 yaş altı kullanıcıları hedeflemez.
-
----
-
-## 12. Politika Güncellemeleri
-
-Bu politika zaman zaman güncellenebilir.
-
----
-
-## 13. İletişim
-
-Sorularınız için:
-
-**[aklimda.support@gmail.com](mailto:aklimda.support@gmail.com)**
-
-
-<hr>
-
-<h1>Privacy Policy (English)</h1>
-
-# Aklımda Privacy Policy
-
-Last Updated: April 16, 2026
-
-This Privacy Policy explains how Aklımda ("App") collects, uses, and protects user information.
-
-## 1. Developer
-
-Developer: Betül Aktoprak
-Email: [aklimda.support@gmail.com](mailto:aklimda.support@gmail.com)
-
----
-
-## 2. Information We Collect
-
-### Account Information
-
-* Email address
-* Username
-* Password (hashed)
-
-Used for:
-
-* Authentication
-* Account management
-
----
-
-## 3. Journal Data
-
-Users may provide:
-
-* Journal text
-* Mood
-* Title
-* Timestamp
-
-Used for:
-
-* App functionality
-* AI insights
-
----
-
-## 4. AI Services
-
-The app uses:
-
-* Groq API
-* OpenAI (optional fallback)
-
-When AI features are used:
-
-* Journal text may be sent for analysis
-* AI responses may be stored
-
-AI requests are not logged for debugging.
-
----
-
-## 5. Music Services
-
-The app uses:
-
-* Apple iTunes Search API
-* Spotify (external link)
-* YouTube (external link)
-
----
-
-## 6. Authentication
-
-Authentication system:
-
-* ASP.NET Core JWT
-* Access token
-
-Stored locally:
-
-* Access token
-* User ID
-* Email
-
----
-
-## 7. Data Retention
-
-* Data stored while account active
-* Deleted within 30 days after account deletion
-
----
-
-## 8. Analytics
-
-The app does not use analytics tools.
-
----
-
-## 9. Infrastructure
-
-Backend: Render
-Database: Supabase PostgreSQL
-
----
-
-## 10. Security
-
-* HTTPS
-* JWT
-* Password hashing
-
----
-
-## 11. Children
-
-The app is not intended for children under 13.
-
----
-
-## 12. Contact
-
-[aklimda.support@gmail.com](mailto:aklimda.support@gmail.com)
-
-
-</body>
+    <p>aklimda.support@gmail.com</p>
+  </body>
 </html>
